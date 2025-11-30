@@ -353,7 +353,7 @@ const Addresses = () => (
 export default function LandingPage() {
 
   const handleLaunch = () => {
-      navigate('/app');
+      window.location.href = 'https://app.47eagle.com';
   };
 
   return (
