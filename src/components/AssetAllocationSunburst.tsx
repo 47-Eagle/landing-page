@@ -512,7 +512,7 @@ export default function AssetAllocationSunburst({
             <div className="flex items-center justify-between mb-1.5 sm:mb-2">
               <div className="text-[10px] sm:text-xs text-gray-600 dark:text-gray-400 uppercase tracking-wider font-semibold">USD1/WLFI Strategy</div>
               <a
-                href="https://alpha.charm.fi/ethereum/vault/0x47b2659747d6a7e00c8251c3c3f7e92625a8cf6f"
+                href="https://alpha.charm.fi/ethereum/vault/0x22828dbf15f5fba2394ba7cf8fa9a96bdb444b71"
                 target="_blank"
                 rel="noopener noreferrer"
                 onClick={(e) => e.stopPropagation()}
@@ -571,7 +571,7 @@ export default function AssetAllocationSunburst({
               <div className="flex items-center justify-between mb-1.5 sm:mb-2">
                 <div className="text-[10px] sm:text-xs text-gray-600 dark:text-gray-400 uppercase tracking-wider font-semibold">WETH/WLFI Strategy</div>
                 <a
-                  href="https://alpha.charm.fi/ethereum/vault/0x997feaa69a60c536f8449f0d5adf997fd83adf39"
+                  href="https://alpha.charm.fi/ethereum/vault/0x3314e248f3f752cd16939773d83beb3a362f0aef"
                   target="_blank"
                   rel="noopener noreferrer"
                   onClick={(e) => e.stopPropagation()}

@@ -11,13 +11,13 @@ export const CONTRACTS = {
   
   // Strategy Contracts
   STRATEGY_USD1: import.meta.env.VITE_STRATEGY_USD1_ADDRESS || '0x47B2659747d6A7E00c8251c3C3f7e92625a8cf6f',  // CharmStrategyUSD1 (WLFI/USD1 Strategy) ✅
-  STRATEGY_WETH: import.meta.env.VITE_STRATEGY_WETH_ADDRESS || '0x997feaa69a60c536f8449f0d5adf997fd83adf39',  // CharmStrategyWETH (WETH/WLFI Strategy) ✅
+  STRATEGY_WETH: import.meta.env.VITE_STRATEGY_WETH_ADDRESS || '0x5c525Af4153B1c43f9C06c31D32a84637c617FfE',  // CharmStrategyWETH (WETH/WLFI Strategy) ✅
   STRATEGY: import.meta.env.VITE_STRATEGY_ADDRESS || '0x47B2659747d6A7E00c8251c3C3f7e92625a8cf6f',    // Legacy - points to USD1 strategy
   
   // External Contracts - Charm Alpha Vaults
-  CHARM_VAULT_USD1: import.meta.env.VITE_CHARM_VAULT_USD1_ADDRESS || '0x47b2659747d6a7e00c8251c3c3f7e92625a8cf6f', // Charm USD1/WLFI Alpha Vault
-  CHARM_VAULT_WETH: import.meta.env.VITE_CHARM_VAULT_WETH_ADDRESS || '0x997feaa69a60c536f8449f0d5adf997fd83adf39', // Charm WETH/WLFI Alpha Vault
-  CHARM_VAULT: import.meta.env.VITE_CHARM_VAULT_USD1_ADDRESS || import.meta.env.VITE_CHARM_VAULT_ADDRESS || '0x47b2659747d6a7e00c8251c3c3f7e92625a8cf6f', // Legacy - points to USD1 vault
+  CHARM_VAULT_USD1: import.meta.env.VITE_CHARM_VAULT_USD1_ADDRESS || '0x22828Dbf15f5FBa2394Ba7Cf8fA9A96BdB444B71', // Charm USD1/WLFI Alpha Vault
+  CHARM_VAULT_WETH: import.meta.env.VITE_CHARM_VAULT_WETH_ADDRESS || '0x3314e248F3F752Cd16939773D83bEb3a362F0AEF', // Charm WETH/WLFI Alpha Vault
+  CHARM_VAULT: import.meta.env.VITE_CHARM_VAULT_USD1_ADDRESS || import.meta.env.VITE_CHARM_VAULT_ADDRESS || '0x22828Dbf15f5FBa2394Ba7Cf8fA9A96BdB444B71', // Legacy - points to USD1 vault
   
   // Uniswap V3 Pools - WLFI/USD1
   UNISWAP_V3_POOL_USD1_1PCT: import.meta.env.VITE_UNISWAP_V3_POOL_USD1_1PCT || '0xf9f5E6f7A44Ee10c72E67Bded6654afAf4D0c85d', // USD1/WLFI 1% Fee Tier (Deposits)

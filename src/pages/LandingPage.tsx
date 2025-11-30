@@ -27,8 +27,8 @@ const CONTRACTS = {
   wlfiBase: '0x47af3595BFBE6c86E59a13d5db91AEfbFF0eA91e',
   wlfiAdapter: '0x2437F6555350c131647daA0C655c4B49A7aF3621',
   composer: '0x0c74174b5F04ec15d3Fb94D15Dc13c91fAc6C21F',
-  charmUSD1: '0x47b2659747d6a7e00c8251c3c3f7e92625a8cf6f',
-  charmWETH: '0x997feaa69a60c536f8449f0d5adf997fd83adf39',
+  charmUSD1: '0x22828Dbf15f5FBa2394Ba7Cf8fA9A96BdB444B71',
+  charmWETH: '0x3314e248F3F752Cd16939773D83bEb3a362F0AEF',
   registry: '0x47c81c9a70CA7518d3b911bC8C8b11000e92F59e',
   vault: '0x47b3ef629D9cB8DFcF8A6c61058338f4e99d7953',
   wrapper: '0x47dAc5063c526dBc6f157093dd1D62d9DE8891c5'
@@ -38,14 +38,14 @@ const CHARM_STRATEGIES = [
   {
     name: "USD1 / WLFI",
     pool: "Uniswap V3 (1%)",
-    address: "0x47b2...8cf6f",
+    address: "0x2282...B444B71",
     apy: "42.5%",
     tvl: "$4.2M"
   },
   {
-    name: "WETH / WLFI",
+    name: "WETH / WLFI", 
     pool: "Uniswap V3 (1%)",
-    address: "0x997f...df39",
+    address: "0x3314...F0AEF", 
     apy: "38.2%",
     tvl: "$2.8M"
   }
@@ -211,7 +211,7 @@ const CharmStrategyVisualizer = () => {
            <div className="space-y-4">
               <div className="flex justify-between items-center">
                  <span className="text-xs text-gray-500 uppercase tracking-wider font-semibold">Recent Rebalances</span>
-                 <a href="https://alpha.charm.fi/ethereum/vault/0x47b2659747d6a7e00c8251c3c3f7e92625a8cf6f" target="_blank" rel="noreferrer" className="text-xs text-blue-500 hover:underline flex items-center gap-1">
+                 <a href="https://alpha.charm.fi/ethereum/vault/0x22828dbf15f5fba2394ba7cf8fa9a96bdb444b71" target="_blank" rel="noreferrer" className="text-xs text-blue-500 hover:underline flex items-center gap-1">
                     View on Charm <ExternalLink size={10} />
                  </a>
               </div>

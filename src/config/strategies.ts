@@ -35,13 +35,13 @@ export const ACTIVE_STRATEGIES: Strategy[] = [
     name: 'Charm Finance AlphaVault',
     protocol: 'Charm Finance',
     description: 'Automated Uniswap V3 liquidity management with dynamic rebalancing for WLFI/USD1 pair.',
-    contractAddress: '0x47b2659747d6a7e00c8251c3c3f7e92625a8cf6f',
+    contractAddress: '0x22828Dbf15f5FBa2394Ba7Cf8fA9A96BdB444B71',
     type: 'uniswap-v3',
     active: true,
     allocation: 100, // Currently 100% of deployed assets
     color: '#6366f1', // Indigo
     links: {
-      analytics: 'https://alpha.charm.fi/vault/0x47b2659747d6a7e00c8251c3c3f7e92625a8cf6f',
+      analytics: 'https://alpha.charm.fi/vault/0x22828Dbf15f5FBa2394Ba7Cf8fA9A96BdB444B71',
       docs: 'https://docs.charm.fi/',
     },
     details: {
