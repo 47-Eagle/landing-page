@@ -7,8 +7,11 @@ import './index.css';
 
 export default function App() {
   return (
-    <div className="App">
-      <LandingPage />
+    <div className="App min-h-screen bg-blue-500 flex items-center justify-center">
+      <div className="text-white text-4xl font-bold">
+        47 Eagle Test - Components Loading...
+      </div>
+      {/* <LandingPage /> */}
     </div>
   );
 }
