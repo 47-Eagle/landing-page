@@ -2,28 +2,99 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <link rel="icon" type="image/png" href="https://tomato-abundant-urial-204.mypinata.cloud/ipfs/bafybeigzyatm2pgrkqbnskyvflnagtqli6rgh7wv7t2znaywkm2pixmkxy" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>47 Eagle - Cross-Chain Yield Protocol</title>
-    <meta name="description" content="The first omnichain yield aggregator for WLFI. Bridge, stake, and compound in a single transaction. Powered by LayerZero V2." />
-    <meta name="keywords" content="DeFi, yield farming, cross-chain, LayerZero, WLFI, Ethereum, Base" />
-    <meta name="author" content="47 Eagle Protocol" />
+    <title>Eagle Vault - Omnichain DeFi Vault</title>
+    <meta name="description" content="Professional DeFi vault powered by Charm Finance and LayerZero" />
+    
+    <style>
+      html, body {
+        background-color: #0c0a09; /* Default to dark warm to prevent white flash */
+        margin: 0;
+        padding: 0;
+        height: 100%;
+      }
+      @media (prefers-color-scheme: light) {
+        html, body {
+          background-color: #fdfbf7; /* Warm light for light mode */
+        }
+      }
+      /* Override if class is present */
+      html.dark body {
+        background-color: #0c0a09;
+      }
+    </style>
 
-    <!-- Open Graph / Facebook -->
-    <meta property="og:type" content="website" />
-    <meta property="og:url" content="https://47eagle.com/" />
-    <meta property="og:title" content="47 Eagle - Cross-Chain Yield Protocol" />
-    <meta property="og:description" content="The first omnichain yield aggregator for WLFI. Bridge, stake, and compound in a single transaction." />
-    <meta property="og:image" content="https://tomato-abundant-urial-204.mypinata.cloud/ipfs/bafybeigzyatm2pgrkqbnskyvflnagtqli6rgh7wv7t2znaywkm2pixmkxy" />
-
-    <!-- Twitter -->
-    <meta property="twitter:card" content="summary_large_image" />
-    <meta property="twitter:url" content="https://47eagle.com/" />
-    <meta property="twitter:title" content="47 Eagle - Cross-Chain Yield Protocol" />
-    <meta property="twitter:description" content="The first omnichain yield aggregator for WLFI. Bridge, stake, and compound in a single transaction." />
-    <meta property="twitter:image" content="https://tomato-abundant-urial-204.mypinata.cloud/ipfs/bafybeigzyatm2pgrkqbnskyvflnagtqli6rgh7wv7t2znaywkm2pixmkxy" />
-    <script type="module" crossorigin src="/assets/index-DLK_muF8.js"></script>
-    <link rel="stylesheet" crossorigin href="/assets/index-BFwEn9QR.css">
+    <!-- Prevent flash of wrong theme -->
+    <script>
+      (function() {
+        const savedTheme = localStorage.getItem('theme');
+        // Only apply dark mode if explicitly saved (default is light mode)
+        if (savedTheme === 'dark') {
+          document.documentElement.classList.add('dark');
+        }
+      })();
+    </script>
+    
+    <!-- Patch ethereum object BEFORE React loads to prevent __SECRET_INTERNALS error -->
+    <script>
+      (function() {
+        // Patch Object.defineProperty to handle ethereum object conflicts
+        var originalDefineProperty = Object.defineProperty;
+        Object.defineProperty = function(obj, prop, descriptor) {
+          // Check if this is the ethereum object or a provider
+          var isEthereumObject = false;
+          try {
+            isEthereumObject = obj === window.ethereum || 
+              (window.ethereum && window.ethereum.providers && 
+               window.ethereum.providers.indexOf(obj) !== -1);
+          } catch(e) {}
+          
+          if (isEthereumObject) {
+            // Skip React internal properties on ethereum objects
+            if (prop === '__SECRET_INTERNALS_DO_NOT_USE_OR_YOU_WILL_BE_FIRED' ||
+                prop === '$$typeof' || prop === '_owner' || prop === '_store') {
+              return obj;
+            }
+          }
+          
+          try {
+            return originalDefineProperty.call(this, obj, prop, descriptor);
+          } catch (error) {
+            // Silently handle errors for ethereum object properties
+            if (isEthereumObject) {
+              return obj;
+            }
+            throw error;
+          }
+        };
+        
+        // Also suppress console errors for known wallet extension conflicts
+        var originalConsoleError = console.error;
+        console.error = function() {
+          var args = Array.prototype.slice.call(arguments);
+          if (args[0] && typeof args[0] === 'string') {
+            if (args[0].indexOf('__SECRET_INTERNALS') !== -1 ||
+                args[0].indexOf('Cannot redefine property') !== -1 ||
+                args[0].indexOf('MetaMask encountered') !== -1) {
+              return;
+            }
+          }
+          return originalConsoleError.apply(console, args);
+        };
+      })();
+    </script>
+    <script type="module" crossorigin src="/assets/index.BqtBcpg1.js"></script>
+    <link rel="modulepreload" crossorigin href="/assets/motion.D77LWkhN.js">
+    <link rel="modulepreload" crossorigin href="/assets/react-vendor.CxNYRydI.js">
+    <link rel="modulepreload" crossorigin href="/assets/ethers.BAccFBXb.js">
+    <link rel="modulepreload" crossorigin href="/assets/three-vendor.Cl_v6tw3.js">
+    <link rel="modulepreload" crossorigin href="/assets/viem.Zt6ufg3v.js">
+    <link rel="modulepreload" crossorigin href="/assets/wallet-ui.DrX7agi0.js">
+    <link rel="modulepreload" crossorigin href="/assets/charts.By8zsYJK.js">
+    <link rel="modulepreload" crossorigin href="/assets/safe-vendor.CAyK0Plv.js">
+    <link rel="stylesheet" crossorigin href="/assets/wallet-ui.Dn6Kqrs6.css">
+    <link rel="stylesheet" crossorigin href="/assets/index.CDmK5KG3.css">
   </head>
   <body>
     <div id="root"></div>
