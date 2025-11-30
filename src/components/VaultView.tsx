@@ -2284,7 +2284,7 @@ export default function VaultView({ provider, account, onToast, onNavigateUp, on
                           allocation: `${usd1Allocation}%`,
                           status: 'active',
                           description: 'Actively managed concentrated liquidity position on Uniswap V3, optimized for the USD1/WLFI 1% fee tier pool.',
-                          analytics: 'https://alpha.charm.fi/vault/1/0x47b2f57fb48177c02e9e219ad4f4e42d5f4f1a0c',
+                          analytics: 'https://alpha.charm.fi/vault/1/0x997feaa69a60c536f8449f0d5adf997fd83adf39',
                           revertAnalytics: 'https://revert.finance/#/pool/mainnet/uniswapv3/0xf9f5e6f7a44ee10c72e67bded6654afaf4d0c85d',
                           contract: '0x47B2659747d6A7E00c8251c3C3f7e92625a8cf6f',
                           charmVault: '0x22828Dbf15f5FBa2394Ba7Cf8fA9A96BdB444B71',
@@ -2302,7 +2302,7 @@ export default function VaultView({ provider, account, onToast, onNavigateUp, on
                           allocation: `${wethAllocation}%`,
                           status: 'active',
                           description: 'Actively managed concentrated liquidity position on Uniswap V3, optimized for the WETH/WLFI 1% fee tier pool. Features 24-hour oracle support for stable operations.',
-                          analytics: 'https://alpha.charm.fi/vault/1/0x3314e248F3F752Cd16939773D83bEb3a362F0AEF',
+                          analytics: 'https://alpha.charm.fi/vault/1/0x47b2659747d6a7e00c8251c3c3f7e92625a8cf6f',
                           contract: CONTRACTS.STRATEGY_WETH,
                           charmVault: CONTRACTS.CHARM_VAULT_WETH,
                           uniswapPool: CONTRACTS.UNISWAP_V3_POOL_WETH_1PCT, // WETH/WLFI 1% pool
