@@ -453,14 +453,14 @@ export default function LandingPage() {
           </div>
         </section>
 
-        {/* Stats Section - Removed hardcoded stats to avoid inaccuracy */}
+        {/* Stats Section (high-level, intentionally conservative) */}
         <section className="py-12 border-y border-gray-200/50 dark:border-gray-800/50 bg-gray-50/50 dark:bg-gray-900/50 backdrop-blur-sm">
           <div className="container mx-auto px-6">
             <div className="grid grid-cols-2 md:grid-cols-4 gap-6 md:gap-8">
-              <NeoStatCard label="Total Supply" value="50M" subtitle="Hard Cap" />
-              <NeoStatCard label="Current APY" value="Live" subtitle="View in App" highlighted />
-              <NeoStatCard label="Supported Chains" value="2+" subtitle="Base & Ethereum" />
-              <NeoStatCard label="Security Score" value="Audit" subtitle="In Progress" />
+              <NeoStatCard label="Max Supply" value="50M" subtitle="Fixed hard cap" />
+              <NeoStatCard label="Current APY" value="Live" subtitle="Track in App" highlighted />
+              <NeoStatCard label="Supported Chains" value="3" subtitle="Ethereum • Base • Monad" />
+              <NeoStatCard label="Security" value="Audit" subtitle="In Progress" />
             </div>
           </div>
         </section>
